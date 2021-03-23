@@ -1,1 +1,6 @@
 
+<h1>Posts You've Commented On:</h1>
+<ul><%@user.comments.each do |com|%>
+    <li><%=link_to com.post.title, post_path%></li>
+    </ul>
+    <%end%>
